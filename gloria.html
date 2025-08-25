@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLORIA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for back icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333;
+        }
+        .section-header {
+            background-color: #4a5568; /* Darker gray for headers */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-button {
+            background-color: #6b7280; /* Slightly lighter gray */
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #4a5568;
+        }
+        .content-card {
+            background-color: #ffffff; /* White cards */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+        .thumbnail-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 2px solid #e2e8f0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+            border-color: #4a5568;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto">
+            <div class="section-header">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <h1 class="text-3xl font-bold flex-grow text-center">GLORIA (Global Observation Research Initiative in Alpine Environments)</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-3 text-gray-700">Contributing to Global Alpine Climate Change Research</h3>
+            <p class="text-gray-600 mb-4">
+                I have actively contributed to the **GLORIA (Global Observation Research Initiative in Alpine Environments)** network, a crucial international initiative dedicated to the long-term monitoring of alpine plant diversity and the impacts of climate change on high-elevation ecosystems. My work involves establishing and meticulously re-surveying permanent plots in some of the world's most sensitive mountain environments.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Through systematic data collection on vegetation composition, species distribution, and environmental factors, I help gather crucial information on **vegetation dynamics and shifts in species distribution** due to ongoing environmental change. This data is then aggregated globally to provide insights into how alpine flora are responding to a warming climate, contributing to vital scientific assessments and conservation efforts worldwide. My field experience in diverse mountain ranges, including the Sawtooth Mountains, Lost River Range, and the Wind River Range, aligns well with GLORIA's objectives.
+            </p>
+            <div class="thumbnail-container">
+                <!-- Placeholder for GLORIA Photos, Maps, Charts -->
+                <a href="https://placehold.co/400x300/bfdbfe/333333?text=Alpine+Monitoring+GLORIA" target="_blank">
+                    <img src="https://placehold.co/400x300/bfdbfe/333333?text=Alpine+Monitoring+GLORIA" alt="Alpine Monitoring Thumbnail" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/bfdbfe/333333?text=GLORIA+Plot+Layout" target="_blank">
+                    <img src="https://placehold.co/400x300/bfdbfe/333333?text=GLORIA+Plot+Layout" alt="GLORIA Plot Layout Thumbnail" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/bfdbfe/333333?text=High+Elevation+Flora" target="_blank">
+                    <img src="https://placehold.co/400x300/bfdbfe/333333?text=High+Elevation+Flora" alt="High Elevation Flora Thumbnail" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/bfdbfe/333333?text=Climate+Sensor" target="_blank">
+                    <img src="https://placehold.co/400x300/bfdbfe/333333?text=Climate+Sensor" alt="Climate Sensor Thumbnail" class="thumbnail">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 shadow-inner rounded-t-xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 My Accomplishments. All rights reserved.</p>
+            <p>Built with passion and exploration.</p>
+        </div>
+    </footer>
+</body>
+</html>

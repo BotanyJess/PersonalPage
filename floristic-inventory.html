@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristic Inventory</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for back icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333;
+        }
+        .section-header {
+            background-color: #4a5568; /* Darker gray for headers */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-button {
+            background-color: #6b7280; /* Slightly lighter gray */
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #4a5568;
+        }
+        .content-card {
+            background-color: #ffffff; /* White cards */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+        .image-caption-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .thumbnail-link {
+            display: block;
+            width: 100%;
+            height: 100px; /* Fixed height for thumbnails */
+            overflow: hidden; /* Ensure image fits */
+            border-radius: 0.5rem;
+            border: 2px solid #e2e8f0;
+            transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        .thumbnail-link:hover {
+            transform: scale(1.05);
+            border-color: #4a5568;
+        }
+        .thumbnail-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .thumbnail-caption {
+            margin-top: 0.5rem;
+            font-size: 0.875rem; /* text-sm */
+            color: #6b7280; /* gray-500 */
+        }
+        .medium-width-image {
+            display: block;
+            margin: 1.5rem auto;
+            max-width: 700px; /* Adjust max-width as needed */
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .plant-link {
+            color: #1a73e8; /* A nice blue for links */
+            text-decoration: none;
+        }
+        .plant-link:hover {
+            text-decoration: underline;
+        }
+        /* Custom style for the blockquote to enhance differentiation */
+        .quote-block {
+            background-color: #f8f8f8; /* Very light gray background */
+            border-left: 5px solid #6b7280; /* Darker border */
+            padding: 1.5rem; /* Increased padding */
+            border-radius: 0.75rem; /* Rounded corners for the block */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto">
+            <div class="section-header">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <h1 class="text-3xl font-bold flex-grow text-center">Floristic Inventory</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="content-card mb-8">
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Botanical collections provide foundational data on diversity and distribution of plants. The resulting herbarium specimens provide examples of phenotypic variation, phenology and material from which DNA can be extracted. Comprehensive surveys provide a depth of data that episodic local surveys and citizen science do not replace. As part of my master’s degree, I performed a botanical inventory of a 27,330 square km area in east-central Idaho, from 2010-2012. With assistance from my graduate advisor, Dr. Ron Hartman, we collected and pressed 11,235 specimens, from which I identified 1,349 vascular plant taxa.
+            </p>
+            <!-- Medium width image link 1 -->
+            <a href="Flora_web1.jpg" target="_blank">
+                <img src="Flora_web1.jpg" alt="Medium Image 1" class="medium-width-image">
+            </a>
+            <!-- Graphics 1-4 in two rows of two with captions -->
+            <div class="grid grid-cols-2 gap-4 mt-6">
+                <div class="image-caption-item">
+                    <a href="Flora_web3.jpg" target="_blank" class="thumbnail-link">
+                        <img src="Flora_web3.jpg" alt="Thumbnail Graphic 1">
+                    </a>
+                    <span class="thumbnail-caption">Distribution of survey sites across the project area. </span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="Flora_web5.jpg" target="_blank" class="thumbnail-link">
+                        <img src="Flora_web5.jpg" alt="Thumbnail Graphic 2">
+                    </a>
+                    <span class="thumbnail-caption">Euclidean distance for survey sites within the project area. Darker shading indicates larger geographic gaps. The large gap on the western edge of the project area lies within the Frank Church River of No Return Wilderness, where distances from trailheads were prohibitive to sampling, given the overall project area.</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="Flora_web4.jpg" target="_blank" class="thumbnail-link">
+                        <img src="Flora_web4.jpg" alt="Thumbnail Graphic 3">
+                    </a>
+                    <span class="thumbnail-caption">Survey sites plotted in red against the environmental envelope of the project area in gray. The similarity of clustering in survey sites compared to the project area demonstrates that all major ecological zones were surveyed at least nominally.</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="Flora_web2.jpg" target="_blank" class="thumbnail-link">
+                        <img src="Flora_web2.jpg" alt="Thumbnail Graphic 4">
+                    </a>
+                    <span class="thumbnail-caption">The ten most collected taxa. Conversely, 43% of the 1,349 taxa were recorded three or fewer times and there were 278 taxa collected only once.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h3 class="text-xl font-semibold mb-3 text-gray-700"><i>Polemonium elusum</i> J. J. Irwin & R. L. Hartman</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The day that I collected a specimen of an undescribed <i>Polemonium</i>, I was not aware of its distinction. It was not until the following winter, while keying plants, that I realized I had pressed something special. During the previous fall semester, I was angry at my advisor’s requirement for ‘botanical Latin’. The International Code of Botanical Nomenclature had recently lifted the requirement that publications containing newly described species include a paragraph in Latin. Most notably, I thought to myself, “I’m never finding an undescribed species anyway, so why must I take this class?!”
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                <i>Polemonium elusum</i> is a peculiar species in that it has a small geographic distribution of approximately 260 sq km, but grows in a broad range of habitat types and elevations. Is <i>Polemonium elusum</i> rapidly contracting or expanding its range?
+            </p>
+            <!-- Medium width image link 2 -->
+            <a href="https://placehold.co/700x400/9ca3af/ffffff?text=Medium+Image+2" target="_blank">
+                <img src="https://placehold.co/700x400/9ca3af/ffffff?text=Medium+Image+2" alt="Medium Image 2" class="medium-width-image">
+            </a>
+        </div>
+
+        <div class="content-card mb-8">
+            <blockquote class="quote-block italic text-gray-700">
+                "Do not jump into your automobile next June and rush out…hoping to see some of that which I have attempted to evoke in these pages. In the first place you can't see anything from a car; you've got to get out of the [expletive] contraption and walk, better yet crawl, on hands and knees…When traces of blood begin to mark your trail you'll see something, maybe. Probably not.”
+                <footer class="mt-2 text-sm not-italic">
+                    - <em>Edward Abbey in Desert Solitaire</em>
+                </footer>
+            </blockquote>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                During the course of my three summers of survey, I stopped occasionally to photograph some of the species I encountered. I’ve since uploaded these photos to iNaturalist and grouped them under a project you may access here:
+                <a href="https://www.inaturalist.org/projects/floristic-inventory-photographs" target="_blank" class="plant-link block mt-2">https://www.inaturalist.org/projects/floristic-inventory-photographs</a>
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Below are a few snapshots I selected to showcase different aspects of the field work and the variety of ecosystems I worked in.
+            </p>
+            <!-- Field work photos in three rows of three -->
+            <div class="grid grid-cols-3 gap-4 mt-6">
+                <a href="Flora_web6.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web6.jpg" alt="Field Work Thumbnail 1">
+                </a>
+                <a href="Flora_web7.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web7.jpg" alt="Field Work Thumbnail 2">
+                </a>
+                <a href="Flora_web8.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web8.jpg" alt="Field Work Thumbnail 3">
+                </a>
+                <a href="Flora_web9.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web9.jpg" alt="Field Work Thumbnail 4">
+                </a>
+                <a href="Flora_web10.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web10.jpg" alt="Field Work Thumbnail 5">
+                </a>
+                <a href="Flora_web11.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web11.jpg" alt="Field Work Thumbnail 6">
+                </a>
+                <a href="Flora_web12.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web12.jpg" alt="Field Work Thumbnail 7">
+                </a>
+                <a href="Flora_web13.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web13.jpg" alt="Field Work Thumbnail 8">
+                </a>
+                <a href="Flora_web14.jpg" target="_blank" class="thumbnail-link">
+                    <img src="Flora_web14.jpg" alt="Field Work Thumbnail 9">
+                </a>
+            </div>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Through my botanical inventory and the many years of exploration that have followed, I’ve learned to ‘read a story’ through the interaction of plants and landscape – a story with clues about climate, geology, fire, invasion and human history.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 shadow-inner rounded-t-xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Jessica "Jess" Irwin. All rights reserved.</p>
+            <p>Built with passion and exploration.</p>
+        </div>
+    </footer>
+</body>
+</html>

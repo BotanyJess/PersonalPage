@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Crest Trail</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for back icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333;
+        }
+        .section-header {
+            background-color: #4a5568; /* Darker gray for headers */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-button {
+            background-color: #6b7280; /* Slightly lighter gray */
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #4a5568;
+        }
+        .content-card {
+            background-color: #ffffff; /* White cards */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+        .thumbnail-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 2px solid #e2e8f0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+            border-color: #4a5568;
+        }
+        .mid-sized-photo-link {
+            display: block; /* Makes the link take full width */
+            margin: 1.5rem auto; /* Center it and add vertical space */
+            max-width: 800px; /* Max width for mid-sized */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensures image corners are rounded with link */
+        }
+        .mid-sized-photo-link img {
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            object-fit: cover;
+            display: block;
+            transition: transform 0.2s ease-in-out;
+        }
+        .mid-sized-photo-link:hover img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto">
+            <div class="section-header">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <h1 class="text-3xl font-bold flex-grow text-center">Pacific Crest Trail Adventure</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="content-card mb-8">
+            <!-- Mid-sized photo-link added here -->
+            <a href="https://placehold.co/800x300/a78bfa/ffffff?text=Mid-Sized+PCT+Photo" target="_blank" class="mid-sized-photo-link">
+                <img src="https://placehold.co/800x300/a78bfa/ffffff?text=Mid-Sized+PCT+Photo" alt="Mid-sized PCT Photo">
+            </a>
+
+            <p class="text-gray-700 leading-relaxed mb-4">
+                In 2009, my partner and I thru-hiked approximately 3,200 km of the Pacific Crest Trail. We began the trek in mid-April and finished it in mid-September—entirely self-supported except for the generosity of "trail angels." The journey gave us a greater sense of perseverance and teamwork, even among strangers. We overcame many notable challenges, particularly with food supplies, pack-weight, footwear, and snow crossings. In the spirit of exploration, we diverted from the official trail at multiple locations, following carefully planned alternative routes that combined cross-country navigation with trails not part of the PCT.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+1" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+1" alt="PCT Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+2" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+2" alt="PCT Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+3" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Thumb+3" alt="PCT Thumbnail 3" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Small-Town Groceries and the 'Bounce-Box'</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Most of the Pacific Crest Trail is subdivided by the east-west highways that cross the mountains from one side to the other. Within a few dozen kilometers of highway crossings, there were small towns with at least one grocery store. Thus, the hike was framed around the kilometers of trail and anticipated number of days' hike between each resupply point. The longer the distance, the greater the weight of food we had to carry.
+            </p>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Pack Weight</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                For the first few hundred miles, my partner and I struggled to meet our daily distance goals. I began experiencing knee troubles and she had swollen raw feet from blisters. We hadn’t streamlined our gear and had several items we felt were essential (they were not), such as a tripod, a camcorder, and extra water. Eventually, we purchased new, smaller backpacks and pared down our weight to just 35lbs for a five-day segment. Our lighter packs granted us immeasurable freedom to complete daily distance goals.
+            </p>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Snow Crossings</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                We had several arduous snow crossings that created conditions not typical of backpacking trips, especially at Milly’s Foot Pass, Muir Pass, and the Minarets Wilderness. Early summer in the Sierra Nevada is marked by warm, cloudless days and rapidly melting snowpack above treeline. In the mornings, snowfields consisted of hard-packed ice and transformed into deep slush by late afternoon. The high elevations, bright glare, and reflected UV during snow crossings added to the overall challenge.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+1" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+1" alt="PCT Snow Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+2" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+2" alt="PCT Snow Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+3" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Snow+3" alt="PCT Snow Thumbnail 3" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Rain</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Over Labor Day weekend, we experienced three days of continuous, cold rain in Washington near Mount Adams. Recall that we had previously streamlined our packs with only enough gear and clothing for fair-weather hiking. We discovered that with continuous rain, no matter how careful, eventually everything gets wet, including sleeping bags. During the day, we kept warm by continuous movement with shorter breaks. At night, we huddled together in wet sleeping bags until our body heat dried them out. On the third night, my partner had difficulty warming up enough to stop shivering, and so the next morning we hitchhiked to safety. For the remainder of September, we left the Pacific Crest Trail and only returned when weather forecasts were favorable.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+1" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+1" alt="PCT Rain Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+2" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+2" alt="PCT Rain Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+3" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+3" alt="PCT Rain Thumbnail 3" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+4" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+4" alt="PCT Rain Thumbnail 4" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+5" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+5" alt="PCT Rain Thumbnail 5" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+6" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+6" alt="PCT Rain Thumbnail 6" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+7" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+7" alt="PCT Rain Thumbnail 7" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+8" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+8" alt="PCT Rain Thumbnail 8" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+9" target="_blank">
+                    <img src="https://placehold.co/400x300/a78bfa/ffffff?text=PCT+Rain+9" alt="PCT Rain Thumbnail 9" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 shadow-inner rounded-t-xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Jessica "Jess" Irwin. All rights reserved.</p>
+            <p>Built with passion and exploration.</p>
+        </div>
+    </footer>
+</body>
+</html>

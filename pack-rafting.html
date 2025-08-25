@@ -1,0 +1,249 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Rafting Experiences</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for back icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333;
+        }
+        .section-header {
+            background-color: #4a5568; /* Darker gray for headers */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-button {
+            background-color: #6b7280; /* Slightly lighter gray */
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #4a5568;
+        }
+        .content-card {
+            background-color: #ffffff; /* White cards */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+        .thumbnail-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 2px solid #e2e8f0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+            border-color: #4a5568;
+        }
+        .full-width-photo {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            object-fit: cover;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        a.text-blue-600:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto">
+            <div class="section-header">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <h1 class="text-3xl font-bold flex-grow text-center">Pack Rafting Experiences</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Full-width photo placeholder -->
+        <img src="https://placehold.co/1200x400/93c5fd/333333?text=Full-Width+Packrafting+Photo" alt="Full Width Packrafting Photo" class="full-width-photo">
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">What is Pack-Rafting?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Pack-rafting is a mode of travel that combines backpacking and rafting. For part of a trip
+                the lightweight inflatable boat is carried on/in a backpack, and for part of
+                the trip, the backpack is carried in the boat. With careful plans, pack rafting
+                is ideal for a variety of adventure routes, particularly for crossing glacial
+                lakes with rugged shorelines, combining river segments with hiking routes,
+                crossing rivers too deep to ford, or landscapes with a complex mosaic of lakes
+                and waterways. The concept of a packable lightweight boat has been around for
+                over 150 years and became a recognized form of adventure sport beginning in the
+                1970s.
+            </p>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">To Go Like No One Has Gone Before:</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                I’ve undertaken several incredible pack-raft trips through the years. I currently own a 9ft Alpacka brand raft and I <a href="https://alpackaraft.com" target="_blank" class="text-blue-600 hover:underline">highly recommend their boats</a>. I’ve dragged my boat over gravel and smashed it through juniper branches on the Dismal River (Nebraska) and have not had a puncture. It's been a while since my last grand trip, but I’m always eager to get out again. Hit me up if you have ideas.
+            </p>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Owyhee River (Idaho/Oregon)</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The unique geology and remoteness of the Owyhee River make it a special place indeed. I’ve returned to various segments several times over the years.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+1" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+1" alt="Owyhee River Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+2" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+2" alt="Owyhee River Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+3" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+3" alt="Owyhee River Thumbnail 3" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+4" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+4" alt="Owyhee River Thumbnail 4" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+5" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+5" alt="Owyhee River Thumbnail 5" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+6" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Owyhee+6" alt="Owyhee River Thumbnail 6" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Escalante River (Utah)</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Entry and exit points for the Escalante must be carefully researched. Flash floods, heat-exhaustion, and impassible routes are a real risk when planning novel routes, but add to the adventure and accomplishment of your trip!
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+1" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+1" alt="Escalante River Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+2" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+2" alt="Escalante River Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+3" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+3" alt="Escalante River Thumbnail 3" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+4" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+4" alt="Escalante River Thumbnail 4" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+5" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+5" alt="Escalante River Thumbnail 5" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Escalante+6" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Escalante+6" alt="Escalante River Thumbnail 6" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Dirty Devil River (Utah)</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Michael Kelsey's description of "The Great Alcove" on the Burr Point Trail in his book, *Non-Technical Canyon Hiking Guide to the Colorado Plateau*, was pivotal to the success of this trip.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+1" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+1" alt="Dirty Devil River Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+2" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+2" alt="Dirty Devil River Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+3" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+3" alt="Dirty Devil River Thumbnail 3" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+4" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+4" alt="Dirty Devil River Thumbnail 4" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+5" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+5" alt="Dirty Devil River Thumbnail 5" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+6" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dirty+Devil+6" alt="Dirty Devil River Thumbnail 6" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">North Platte River (Wyoming)</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Details about my North Platte River pack-rafting experience coming soon!
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+1" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+1" alt="North Platte River Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+2" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+2" alt="North Platte River Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+3" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=N+Platte+3" alt="North Platte River Thumbnail 3" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <div class="content-card mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Dismal River (Nebraska)</h2>
+            <p class="text-700 leading-relaxed mb-4">
+                What started as a day-float became an overnight hike by starlight without food or camp gear. It's a beautiful area, just be sure to stage your vehicle at the correct take-out location.
+            </p>
+            <div class="thumbnail-container">
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dismal+1" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dismal+1" alt="Dismal River Thumbnail 1" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dismal+2" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dismal+2" alt="Dismal River Thumbnail 2" class="thumbnail">
+                </a>
+                <a href="https://placehold.co/400x300/93c5fd/333333?text=Dismal+3" target="_blank">
+                    <img src="https://placehold.co/400x300/93c5fd/333333?text=Dismal+3" alt="Dismal River Thumbnail 3" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 shadow-inner rounded-t-xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Jessica "Jess" Irwin. All rights reserved.</p>
+            <p>Built with passion and exploration.</p>
+        </div>
+    </footer>
+</body>
+</html>
