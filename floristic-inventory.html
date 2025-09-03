@@ -77,6 +77,15 @@
             font-size: 0.875rem; /* text-sm */
             color: #6b7280; /* gray-500 */
         }
+        .large-width-image {
+            display: block;
+            margin: 1.5rem auto;
+            max-width: 900px;
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
         .medium-width-image {
             display: block;
             margin: 1.5rem auto;
@@ -121,103 +130,133 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
         <div class="content-card mb-8">
-            <p class="text-gray-700 leading-relaxed mb-4">
-                Botanical collections provide foundational data on diversity and distribution of plants. The resulting herbarium specimens provide examples of phenotypic variation, phenology and material from which DNA can be extracted. Comprehensive surveys provide a depth of data that episodic local surveys and citizen science do not replace. As part of my master’s degree, I performed a botanical inventory of a 27,330 square km area in east-central Idaho, from 2010-2012. With assistance from my graduate advisor, Dr. Ron Hartman, we collected and pressed 11,235 specimens, from which I identified 1,349 vascular plant taxa.
-            </p>
-            <!-- Medium width image link 1 -->
-            <a href="Flora_web1.jpg" target="_blank">
-                <img src="Flora_web1.jpg" alt="Medium Image 1" class="medium-width-image">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Floristic Inventory: A systematic survey to catalog all plant species and infraspecific taxa, and their distributions, within a defined geographic area.</h2>
+            <!-- Large image link 1 -->
+            <a href="https://placehold.co/900x500/9ca3af/ffffff?text=Large+Image+1" target="_blank">
+                <img src="https://placehold.co/900x500/9ca3af/ffffff?text=Large+Image+1" alt="Large Image 1" class="large-width-image">
             </a>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                My master’s thesis was more than a research project; it was a three-year immersion into the vast and rugged landscapes of east-central Idaho. Spanning approximately 27,000 square kilometers, this floristic inventory was my effort to document the remarkable plant diversity of the region. I surveyed seven mountain ranges, exploring forests, rangelands, wetlands, and alpine summits, with each day bringing new botanical discoveries.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The volume of specimens and geographic area of this project far surpassed that of typical botanical inventories. I finished the project with 1,349 unique taxa identified from 11,237 specimens. While surveying, I often reached a local high point that rewarded me with expansive views stretching out to each horizon – all of it my study area. Given the limited number of surveys I alone could complete, selection of survey hike routes was a carefully planned, but organic process that combined information from previous botanical records, aerial imagery, and a variety of geospatial data. Survey routes were selected for their potential to host species not yet documented, regardless of access roads, trail systems, or terrain.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                My summers were a frantic cycle: one or two days spent collecting specimens, followed by one or two days pressing them. Dr. Hartman supplied me with a custom-built rack that could dry over 250 specimens in just a few days. The streamlined process of collecting and pressing without first identifying plants enabled me to maximize my time exploring habitats and documenting plant diversity. Although statistical analysis of species distributions or geospatial relationships was not a component of my thesis, I attempted to demonstrate the opportunity to do so by plotting survey sites both geographically and in environmental space.
+            </p>
             <!-- Graphics 1-4 in two rows of two with captions -->
             <div class="grid grid-cols-2 gap-4 mt-6">
                 <div class="image-caption-item">
-                    <a href="Flora_web3.jpg" target="_blank" class="thumbnail-link">
-                        <img src="Flora_web3.jpg" alt="Thumbnail Graphic 1">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+1" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+1" alt="Thumbnail Graphic 1">
                     </a>
-                    <span class="thumbnail-caption">Distribution of survey sites across the project area. </span>
+                    <span class="thumbnail-caption">Caption:dot map</span>
                 </div>
                 <div class="image-caption-item">
-                    <a href="Flora_web5.jpg" target="_blank" class="thumbnail-link">
-                        <img src="Flora_web5.jpg" alt="Thumbnail Graphic 2">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+2" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+2" alt="Thumbnail Graphic 2">
                     </a>
-                    <span class="thumbnail-caption">Euclidean distance for survey sites within the project area. Darker shading indicates larger geographic gaps. The large gap on the western edge of the project area lies within the Frank Church River of No Return Wilderness, where distances from trailheads were prohibitive to sampling, given the overall project area.</span>
+                    <span class="thumbnail-caption">Caption:climate</span>
                 </div>
                 <div class="image-caption-item">
-                    <a href="Flora_web4.jpg" target="_blank" class="thumbnail-link">
-                        <img src="Flora_web4.jpg" alt="Thumbnail Graphic 3">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+3" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+3" alt="Thumbnail Graphic 3">
                     </a>
-                    <span class="thumbnail-caption">Survey sites plotted in red against the environmental envelope of the project area in gray. The similarity of clustering in survey sites compared to the project area demonstrates that all major ecological zones were surveyed at least nominally.</span>
+                    <span class="thumbnail-caption">Caption:freq_hist</span>
                 </div>
                 <div class="image-caption-item">
-                    <a href="Flora_web2.jpg" target="_blank" class="thumbnail-link">
-                        <img src="Flora_web2.jpg" alt="Thumbnail Graphic 4">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+4" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+4" alt="Thumbnail Graphic 4">
                     </a>
-                    <span class="thumbnail-caption">The ten most collected taxa. Conversely, 43% of the 1,349 taxa were recorded three or fewer times and there were 278 taxa collected only once.</span>
+                    <span class="thumbnail-caption">Caption:sort</span>
                 </div>
             </div>
-        </div>
-
-        <div class="content-card mb-8">
-            <h3 class="text-xl font-semibold mb-3 text-gray-700"><i>Polemonium elusum</i> J. J. Irwin & R. L. Hartman</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                The day that I collected a specimen of an undescribed <i>Polemonium</i>, I was not aware of its distinction. It was not until the following winter, while keying plants, that I realized I had pressed something special. During the previous fall semester, I was angry at my advisor’s requirement for ‘botanical Latin’. The International Code of Botanical Nomenclature had recently lifted the requirement that publications containing newly described species include a paragraph in Latin. Most notably, I thought to myself, “I’m never finding an undescribed species anyway, so why must I take this class?!”
+            <p class="text-gray-700 leading-relaxed my-4">
+                Field work sharpened my botanical eye. Although I began the project with basic knowledge of local plant genera, my true growth was in learning to recognize subtle variations in plants and populations. I collected and pressed everything, from cacti to pine trees, and from thistles to poison ivy. The process enabled creative solutions towards preserving specimens not conducive to being flattened. For example, thick stems had to be sliced thin on one side, tree twigs shaved down on one side, and tall stems folded accordion style to fit on an herbarium sheet.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                <i>Polemonium elusum</i> is a peculiar species in that it has a small geographic distribution of approximately 260 sq km, but grows in a broad range of habitat types and elevations. Is <i>Polemonium elusum</i> rapidly contracting or expanding its range?
+            <p class="text-gray-700 leading-relaxed my-4">
+                The repetition of collecting every species in each new location was crucial. It wasn’t until I was back in the lab, keying out plants at the end of each summer, that I truly began to see the finer distinctions–discovering the subtle differences between cryptic and similar appearing taxa that had eluded me in the field. The process of discovery and pattern recognition became the foundation of my expertise, honed over three years of intense fieldwork.
             </p>
-            <!-- Medium width image link 2 -->
-            <a href="https://placehold.co/700x400/9ca3af/ffffff?text=Medium+Image+2" target="_blank">
-                <img src="https://placehold.co/700x400/9ca3af/ffffff?text=Medium+Image+2" alt="Medium Image 2" class="medium-width-image">
+            <p class="text-gray-700 leading-relaxed my-4">
+                The project was a masterclass in both botany and resilience. To reach remote survey locations, I relied on my personal vehicle, a low-clearance Honda Civic that was otherwise inappropriate for Idaho’s back roads. Long distances to remote locations forced me to hone skills in assessing and traversing 4wd roads. Physical demands were also intense with most surveys taking me across dangerous scree slopes and up hundreds of meters of elevation gain.
+            </p>
+            <p class="text-gray-700 leading-relaxed my-4">
+                I’m especially proud that I documented a previously undescribed species, <i>Polemonium elusum</i>, while completing my project. The species is unique in that it occupies a wide range of habitats but is confined to a small geographic area. While completing my thesis, Dr. Hartman and I worked with (then also a graduate student) Rebecca Stubbs to describe the morphologic, geographic and evolutionary significance of the species.
+            </p>
+            <!-- Medium image of Polemonium elusum -->
+            <a href="https://placehold.co/700x400/9ca3af/ffffff?text=Polemonium+elusum+Image" target="_blank">
+                <img src="https://placehold.co/700x400/9ca3af/ffffff?text=Polemonium+elusum+Image" alt="Polemonium elusum" class="medium-width-image">
             </a>
-        </div>
-
-        <div class="content-card mb-8">
             <blockquote class="quote-block italic text-gray-700">
                 "Do not jump into your automobile next June and rush out…hoping to see some of that which I have attempted to evoke in these pages. In the first place you can't see anything from a car; you've got to get out of the [expletive] contraption and walk, better yet crawl, on hands and knees…When traces of blood begin to mark your trail you'll see something, maybe. Probably not.”
                 <footer class="mt-2 text-sm not-italic">
-                    - <em>Edward Abbey in Desert Solitaire</em>
+                    - Edward Abbey in Desert Solitaire
                 </footer>
             </blockquote>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                During the course of my three summers of survey, I stopped occasionally to photograph some of the species I encountered. I’ve since uploaded these photos to iNaturalist and grouped them under a project you may access here:
-                <a href="https://www.inaturalist.org/projects/floristic-inventory-photographs" target="_blank" class="plant-link block mt-2">https://www.inaturalist.org/projects/floristic-inventory-photographs</a>
+            <p class="text-gray-700 leading-relaxed my-4">
+                While in my study area, I took many photos of individual species. I’ve since uploaded them to iNaturalist and grouped them under a project that you may access here:
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                Below are a few snapshots I selected to showcase different aspects of the field work and the variety of ecosystems I worked in.
+            <a href="https://www.inaturalist.org/projects/floristic-inventory-photographs" target="_blank" class="plant-link block mt-2">https://www.inaturalist.org/projects/floristic-inventory-photographs</a>
+            <p class="text-gray-700 leading-relaxed my-4">
+                I took many, photos while completing this project. Below is a small selection I’ve chosen to illustrate some aspects of the fieldwork and the variety of landscapes:
             </p>
-            <!-- Field work photos in three rows of three -->
+            <!-- Field work photos in three rows of three with captions -->
             <div class="grid grid-cols-3 gap-4 mt-6">
-                <a href="Flora_web6.jpg" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web6.jpg" alt="Field Work Thumbnail 1">
-                </a>
-                <a href="Flora_web7.JPG" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web7.JPG" alt="Field Work Thumbnail 2">
-                </a>
-                <a href="Flora_web8.JPG" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web8.JPG" alt="Field Work Thumbnail 3">
-                </a>
-                <a href="Flora_web9.jpg" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web9.jpg" alt="Field Work Thumbnail 4">
-                </a>
-                <a href="Flora_web10.JPG" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web10.JPG" alt="Field Work Thumbnail 5">
-                </a>
-                <a href="Flora_web11.jpg" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web11.jpg" alt="Field Work Thumbnail 6">
-                </a>
-                <a href="Flora_web12.jpg" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web12.jpg" alt="Field Work Thumbnail 7">
-                </a>
-                <a href="Flora_web13.jpg" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web13.jpg" alt="Field Work Thumbnail 8">
-                </a>
-                <a href="Flora_web14.JPG" target="_blank" class="thumbnail-link">
-                    <img src="Flora_web14.JPG" alt="Field Work Thumbnail 9">
-                </a>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+5" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+5" alt="Thumbnail Graphic 5">
+                    </a>
+                    <span class="thumbnail-caption">Caption:civic</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+6" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+6" alt="Thumbnail Graphic 6">
+                    </a>
+                    <span class="thumbnail-caption">Caption:steep</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+7" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+7" alt="Thumbnail Graphic 7">
+                    </a>
+                    <span class="thumbnail-caption">Caption:tentless</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+8" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+8" alt="Thumbnail Graphic 8">
+                    </a>
+                    <span class="thumbnail-caption">Caption:alpine</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+9" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+9" alt="Thumbnail Graphic 9">
+                    </a>
+                    <span class="thumbnail-caption">Caption:wetland</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+10" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+10" alt="Thumbnail Graphic 10">
+                    </a>
+                    <span class="thumbnail-caption">Caption:scrub</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+11" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+11" alt="Thumbnail Graphic 11">
+                    </a>
+                    <span class="thumbnail-caption">Caption:forest</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+12" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+12" alt="Thumbnail Graphic 12">
+                    </a>
+                    <span class="thumbnail-caption">Caption:Lemhi</span>
+                </div>
+                <div class="image-caption-item">
+                    <a href="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+13" target="_blank" class="thumbnail-link">
+                        <img src="https://placehold.co/400x300/9ca3af/ffffff?text=Graphic+13" alt="Thumbnail Graphic 13">
+                    </a>
+                    <span class="thumbnail-caption">Caption:Salmon</span>
+                </div>
             </div>
-            <p class="text-gray-700 leading-relaxed mt-4">
-                Through my botanical inventory and the many years of exploration that have followed, I’ve learned to ‘read a story’ through the interaction of plants and landscape – a story with clues about climate, geology, fire, invasion and human history.
-            </p>
         </div>
     </main>
 
@@ -230,5 +269,3 @@
     </footer>
 </body>
 </html>
-
-

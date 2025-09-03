@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,7 @@
             padding: 0.5rem;
             border-radius: 0.5rem;
             transition: background-color 0.2s ease-in-out;
+            display: block; /* Ensure menu icon is always visible */
         }
         .menu-icon:hover {
             background-color: #2d3748;
@@ -45,50 +46,34 @@
             padding: 0.75rem 1rem;
             border-radius: 0.5rem;
             color: #fff;
-            font-weight: medium; /* Corrected from font-medium */
+            font-weight: medium;
             transition: background-color 0.2s ease-in-out;
-            margin-bottom: 0.5rem; /* Space between links */
-            display: flex; /* Enable flex for icon and text alignment */
+            margin-bottom: 0.5rem;
+            display: flex;
             align-items: center;
-            justify-content: center; /* Center content on mobile */
-            gap: 0.75rem; /* Space between icon and text */
+            justify-content: center; /* Always center content in the menu list */
+            gap: 0.75rem;
         }
         .nav-links a:hover {
             background-color: #2d3748;
         }
+        .nav-section-title {
+            color: #cbd5e0; /* Light gray text for section titles */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #4a5568; /* Subtle separator */
+            width: 80%; /* Adjust width to center with links */
+            max-width: 300px; /* Limit width */
+            text-align: center;
+            align-self: center; /* Center the title itself */
+            display: block; /* Ensure section titles are always visible */
+        }
 
-        /* Desktop view: show nav links inline */
-        @media (min-width: 768px) {
-            .header-content {
-                justify-content: center; /* Center title on desktop */
-            }
-            .menu-icon {
-                display: none; /* Hide menu icon on desktop */
-            }
-            .nav-links {
-                display: flex;
-                flex-direction: row; /* Row for desktop */
-                margin-top: 0;
-                justify-content: center;
-                gap: 1rem; /* Space between links */
-            }
-            .nav-links a {
-                margin-bottom: 0;
-            }
-            .nav-links a i {
-                margin-right: 0.25rem; /* Small space for desktop icons */
-            }
-             .nav-links a {
-                justify-content: flex-start; /* Align text to start on desktop */
-            }
-        }
-        .content-card {
-            background-color: #ffffff; /* White cards */
-            padding: 1.5rem;
-            border-radius: 0.75rem; /* Rounded corners */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin-bottom: 1.5rem;
-        }
+        /* Removed the @media (min-width: 768px) block to keep mobile menu behavior */
     </style>
 </head>
 <body class="antialiased">
@@ -97,12 +82,13 @@
         <div class="container mx-auto">
             <div class="header-content">
                 <h1 class="text-4xl font-extrabold flex-grow text-center">Jessica "Jess" Irwin</h1>
-                <div class="menu-icon md:hidden" id="menuIcon">
+                <div class="menu-icon" id="menuIcon">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <!-- Navigation Links - Initially hidden on mobile -->
+            <!-- Navigation Links - Always hidden by default, shown on click -->
             <nav class="nav-links" id="navLinks">
+                <span class="nav-section-title">Professional Accomplishments</span>
                 <a href="reciprocal-transplant.html" class="hover:bg-gray-600">
                     <i class="fas fa-seedling"></i> Reciprocal Transplant
                 </a>
@@ -115,6 +101,8 @@
                 <a href="https://www.boisestate.edu/hes/projects/idahos-alpine-summits/" target="_blank" rel="noopener noreferrer" class="hover:bg-gray-600">
                     <i class="fas fa-mountain"></i> GLORIA
                 </a>
+
+                <span class="nav-section-title">Avocational Pursuits</span>
                 <a href="pacific-crest-trail.html" class="hover:bg-gray-600">
                     <i class="fas fa-hiking"></i> Pacific Crest Trail
                 </a>
@@ -139,7 +127,7 @@
             </div>
             <div class="content-card">
                 <p class="text-gray-700 leading-relaxed mb-4">
-                    As a **US Marine Corps veteran** and a **botanist with a master's degree**, my life has been dedicated to both rigorous scientific exploration and adventurous outdoor pursuits. My botanical work includes a comprehensive floristic inventory of east-central Idaho, where I **discovered and published *Polemonium elusum***, and extensive experience with rare plant surveys, seed collection, and spatial analysis using **ESRI's ArcPro**. I provide scientific recommendations on focal species and protocol development.
+                    As a **US Marine Corps veteran** and a **botanist with a master's degree**, my life has been dedicated to both rigorous scientific exploration and adventurous outdoor pursuits. My botanical work includes a comprehensive floristic inventory of east-central Idaho, where I **discovered and published <i>Polemonium elusum</i>**, and extensive experience with rare plant surveys, seed collection, and spatial analysis using **ESRI's ArcPro**. I provide scientific recommendations on focal species and protocol development.
                 </p>
                 <p class="text-gray-700 leading-relaxed mb-4">
                     Beyond the lab and field, my passion for the wild has led me to backpack **2,000 miles of the Pacific Crest Trail**, pack raft challenging rivers like the **Colorado and Owyhee**, and explore remote regions like the **Barguzin Mountains of Siberia**. I'm also an experienced off-road driver, having navigated technical terrain and coached others in 4x4 skills. My journey is one of continuous learning and deep engagement with the natural world, understanding its climates, ecology, and geomorphology.
