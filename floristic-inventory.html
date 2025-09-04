@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floristic Inventory</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for back icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -68,7 +66,10 @@
         }
         .large-width-image {
             display: block;
-            margin: 1.5rem auto;
+            margin-top: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0; /* No space between image and caption */
             max-width: 50%;
             height: auto;
             border-radius: 0.75rem;
@@ -90,10 +91,17 @@
             margin-bottom: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+        /* New styling for the large image captions */
+        figcaption {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem; /* Adds space between caption and next element */
+        }
     </style>
 </head>
 <body class="antialiased">
-    <!-- Header -->
     <header class="bg-gray-800 text-white p-3 shadow-lg rounded-b-xl">
         <div class="container mx-auto flex items-center">
             <a href="index.html" class="back-button">
@@ -103,7 +111,6 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-4 py-3">
         <div class="content-card mb-8">
             <blockquote class="quote-block italic text-gray-700">
@@ -112,22 +119,19 @@
             <p class="text-gray-700 leading-relaxed mb-1">
                 My master’s thesis was more than a research project; it was a three-year immersion into the vast and rugged landscapes of east-central Idaho. Spanning approximately 27,000 square kilometers, this floristic inventory was my effort to document the remarkable plant diversity of the region. I surveyed portions of seven mountain ranges, exploring forests, rangelands, wetlands, and alpine summits, with each day bringing new botanical discoveries.
             </p>
-             <!-- Large image link 1 -->
-            <figure>
-            <a href="Flora_web1.jpg">
-                <img src="Flora_web1.jpg" alt="Project area map" class="large-width-image">
+             <figure>
+                <a href="Flora_web1.jpg">
+                    <img src="Flora_web1.jpg" alt="Project area map" class="large-width-image">
                 </a>
-                <figcaption>Map of the study area.</figcaption>
+                <figcaption>Project area of the floristic inventory of east-central Idaho.</figcaption>
             </figure>
            
-            <!-- Paragraphs 2 & 3 -->
-                <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="text-gray-700 leading-relaxed mb-4">
                 The volume of specimens and geographic area of this project far surpassed that of typical botanical inventories. I finished the project with 1,349 unique taxa identified from 11,237 specimens. While surveying, I often reached a local high point that rewarded me with expansive views stretching out to each horizon – all of it my study area. Given the limited number of surveys I alone could complete, selection of survey hike routes was a carefully planned, but organic process that combined information from previous botanical records, aerial imagery, and a variety of geospatial data. Survey routes were selected for their potential to host species not yet documented, regardless of access roads, trail systems, or terrain.
             </p>
             <p class="text-gray-700 leading-relaxed mb-4">
                 My summers were a frantic cycle: one or two days spent collecting specimens, followed by one or two days pressing them. Dr. Hartman supplied me with a custom-built rack that could dry over 250 specimens in just a few days. The streamlined process of collecting and pressing without first identifying plants enabled me to maximize my time exploring habitats and documenting plant diversity. Although statistical analysis of species distributions or geospatial relationships was not a component of my thesis, I attempted to demonstrate the opportunity to do so by plotting survey sites both geographically and in environmental space.
             </p>
-            <!-- Graphics 1-3 in one row with captions -->              
             <div class="grid grid-cols-3 gap-4 mt-6">
                 <div class="image-caption-item">
                     <a href="Flora_web3.jpg" target="_blank" class="thumbnail-link">
@@ -160,12 +164,11 @@
             <p class="text-gray-700 leading-relaxed my-4">
                 I’m especially proud that I documented a previously undescribed species, <i>Polemonium elusum</i>, while completing my project. The species is unique in that it occupies a wide range of habitats but is confined to a small geographic area. While completing my thesis, Dr. Hartman and I worked with (then also a graduate student) Rebecca Stubbs to describe the morphologic, geographic and evolutionary significance of the species.
             </p>
-            <!-- Medium image of Polemonium elusum -->
             <figure>
                 <a href="Flora_web17.JPG" target="_blank">
-                <img src="Flora_web17.JPG" alt="Polemonium elusum" class="large-width-image">
+                    <img src="Flora_web17.JPG" alt="Polemonium elusum" class="large-width-image">
                 </a>
-                <figcaption><i>Polemonium elusum<i> J.J. Irwin & R.L. Hartman</figcaption>
+                <figcaption>A specimen of <i>Polemonium elusum</i> in the field.</figcaption>
             </figure>
            
             <blockquote class="quote-block italic text-gray-700">
@@ -181,7 +184,6 @@
             <p class="text-gray-700 leading-relaxed my-4">
                 Below is a small selection of additional photos showing aspects of my field work, and the remarkable landscapes of the project area:
             </p>
-            <!-- Field work photos in three rows of three with captions -->
             <div class="grid grid-cols-3 gap-4 mt-6">
                 <div class="image-caption-item">
                     <a href="Flora_web13.jpg" target="_blank" class="thumbnail-link">
@@ -259,7 +261,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 mt-8 shadow-inner rounded-t-xl">
         <div class="container mx-auto text-center text-sm">
             <p>&copy; 2025 Jessica "Jess" Irwin. All rights reserved.</p>
@@ -268,20 +269,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
